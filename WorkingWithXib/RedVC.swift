@@ -9,16 +9,27 @@
 import UIKit
 
 class RedVC: UIViewController {
+    
+    convenience init() {
+        self.init(nibName: "RedVC", bundle: nil)
+    }
+    
+    override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: NSBundle?) {
+        super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
+    }
+
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    @IBAction func goBack(sender: AnyObject) {
+        dismissViewControllerAnimated(true, completion: nil)
     }
 
 }

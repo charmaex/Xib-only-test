@@ -14,7 +14,26 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Jg-e6-Pb1">
+                    <rect key="frame" x="220" y="285" width="160" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="160" id="9WD-u3-fqT"/>
+                        <constraint firstAttribute="height" constant="30" id="iws-C3-ew8"/>
+                    </constraints>
+                    <state key="normal" title="Go back to Blue">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="goBack:" destination="-1" eventType="touchUpInside" id="8F5-xI-leU"/>
+                    </connections>
+                </button>
+            </subviews>
             <color key="backgroundColor" red="1" green="0.084040851149999998" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="1Jg-e6-Pb1" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Doa-d9-pu4"/>
+                <constraint firstItem="1Jg-e6-Pb1" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="U64-RS-Hue"/>
+            </constraints>
         </view>
     </objects>
 </document>

@@ -14,7 +14,42 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RgF-9d-iWa">
+                    <rect key="frame" x="220" y="285" width="160" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="160" id="SG0-z2-OD6"/>
+                        <constraint firstAttribute="height" constant="30" id="kyi-HO-6xz"/>
+                    </constraints>
+                    <state key="normal" title="Go to Red">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="goToRed:" destination="-1" eventType="touchUpInside" id="nen-VR-KUb"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cfy-AY-vLp">
+                    <rect key="frame" x="220" y="155" width="160" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="160" id="UlP-LZ-GcV"/>
+                        <constraint firstAttribute="height" constant="30" id="Wgu-pH-V0i"/>
+                    </constraints>
+                    <state key="normal" title="Go back to Yellow">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="goBack:" destination="-1" eventType="touchUpInside" id="uWj-0e-4k9"/>
+                    </connections>
+                </button>
+            </subviews>
             <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="RgF-9d-iWa" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="2Re-MM-Ini"/>
+                <constraint firstItem="RgF-9d-iWa" firstAttribute="top" secondItem="cfy-AY-vLp" secondAttribute="bottom" constant="100" id="6h1-5R-1eZ"/>
+                <constraint firstItem="RgF-9d-iWa" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="WyO-ul-YyQ"/>
+                <constraint firstItem="cfy-AY-vLp" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="krD-uT-dbf"/>
+            </constraints>
+            <point key="canvasLocation" x="348" y="455"/>
         </view>
     </objects>
 </document>

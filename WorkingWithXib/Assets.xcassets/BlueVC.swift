@@ -9,16 +9,34 @@
 import UIKit
 
 class BlueVC: UIViewController {
+    
+    var redVC: RedVC!
+    
+    convenience init() {
+        self.init(nibName: "BlueVC", bundle: nil)
+    }
+    
+    override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: NSBundle?) {
+        super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
+    }
 
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    @IBAction func goToRed(sender: AnyObject) {
+        redVC = RedVC()
+        presentViewController(redVC, animated: true, completion: nil)
+    }
+    
+    @IBAction func goBack(sender: AnyObject) {
+        dismissViewControllerAnimated(true, completion: nil)
     }
 
 }

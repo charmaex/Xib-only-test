@@ -21,7 +21,9 @@
                         <constraint firstAttribute="height" constant="30" id="GTK-EP-mb2"/>
                         <constraint firstAttribute="width" constant="160" id="v6O-PI-QFY"/>
                     </constraints>
-                    <state key="normal" title="Go to blue"/>
+                    <state key="normal" title="Go to Blue">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
                     <connections>
                         <action selector="goToBlue:" destination="-1" eventType="touchUpInside" id="VUm-Qt-CNR"/>
                     </connections>
