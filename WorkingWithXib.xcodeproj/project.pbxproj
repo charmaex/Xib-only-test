@@ -8,20 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		13844CA91C673378009007F2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13844CA81C673378009007F2 /* AppDelegate.swift */; };
-		13844CAB1C673378009007F2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13844CAA1C673378009007F2 /* ViewController.swift */; };
-		13844CAE1C673378009007F2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13844CAC1C673378009007F2 /* Main.storyboard */; };
 		13844CB01C673378009007F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13844CAF1C673378009007F2 /* Assets.xcassets */; };
 		13844CB31C673378009007F2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13844CB11C673378009007F2 /* LaunchScreen.storyboard */; };
+		13844CBC1C673409009007F2 /* YellowVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13844CBA1C673409009007F2 /* YellowVC.swift */; };
+		13844CBD1C673409009007F2 /* YellowVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13844CBB1C673409009007F2 /* YellowVC.xib */; };
+		13844CC01C67341D009007F2 /* BlueVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13844CBE1C67341D009007F2 /* BlueVC.swift */; };
+		13844CC11C67341D009007F2 /* BlueVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13844CBF1C67341D009007F2 /* BlueVC.xib */; };
+		13844CC41C673437009007F2 /* RedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13844CC21C673437009007F2 /* RedVC.swift */; };
+		13844CC51C673437009007F2 /* RedVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13844CC31C673437009007F2 /* RedVC.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		13844CA51C673378009007F2 /* WorkingWithXib.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WorkingWithXib.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13844CA81C673378009007F2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		13844CAA1C673378009007F2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		13844CAD1C673378009007F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		13844CAF1C673378009007F2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		13844CB21C673378009007F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		13844CB41C673378009007F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		13844CBA1C673409009007F2 /* YellowVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YellowVC.swift; sourceTree = "<group>"; };
+		13844CBB1C673409009007F2 /* YellowVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YellowVC.xib; sourceTree = "<group>"; };
+		13844CBE1C67341D009007F2 /* BlueVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BlueVC.swift; path = Assets.xcassets/BlueVC.swift; sourceTree = "<group>"; };
+		13844CBF1C67341D009007F2 /* BlueVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = BlueVC.xib; path = Assets.xcassets/BlueVC.xib; sourceTree = "<group>"; };
+		13844CC21C673437009007F2 /* RedVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RedVC.swift; sourceTree = "<group>"; };
+		13844CC31C673437009007F2 /* RedVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RedVC.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +62,34 @@
 		13844CA71C673378009007F2 /* WorkingWithXib */ = {
 			isa = PBXGroup;
 			children = (
+				13844CC61C673444009007F2 /* View */,
+				13844CC71C673450009007F2 /* Controller */,
 				13844CA81C673378009007F2 /* AppDelegate.swift */,
-				13844CAA1C673378009007F2 /* ViewController.swift */,
-				13844CAC1C673378009007F2 /* Main.storyboard */,
 				13844CAF1C673378009007F2 /* Assets.xcassets */,
 				13844CB11C673378009007F2 /* LaunchScreen.storyboard */,
 				13844CB41C673378009007F2 /* Info.plist */,
 			);
 			path = WorkingWithXib;
+			sourceTree = "<group>";
+		};
+		13844CC61C673444009007F2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				13844CBB1C673409009007F2 /* YellowVC.xib */,
+				13844CBF1C67341D009007F2 /* BlueVC.xib */,
+				13844CC31C673437009007F2 /* RedVC.xib */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		13844CC71C673450009007F2 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				13844CBA1C673409009007F2 /* YellowVC.swift */,
+				13844CBE1C67341D009007F2 /* BlueVC.swift */,
+				13844CC21C673437009007F2 /* RedVC.swift */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -123,9 +151,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				13844CC11C67341D009007F2 /* BlueVC.xib in Resources */,
+				13844CBD1C673409009007F2 /* YellowVC.xib in Resources */,
+				13844CC51C673437009007F2 /* RedVC.xib in Resources */,
 				13844CB31C673378009007F2 /* LaunchScreen.storyboard in Resources */,
 				13844CB01C673378009007F2 /* Assets.xcassets in Resources */,
-				13844CAE1C673378009007F2 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,22 +166,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				13844CAB1C673378009007F2 /* ViewController.swift in Sources */,
+				13844CBC1C673409009007F2 /* YellowVC.swift in Sources */,
 				13844CA91C673378009007F2 /* AppDelegate.swift in Sources */,
+				13844CC41C673437009007F2 /* RedVC.swift in Sources */,
+				13844CC01C67341D009007F2 /* BlueVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		13844CAC1C673378009007F2 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				13844CAD1C673378009007F2 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		13844CB11C673378009007F2 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
